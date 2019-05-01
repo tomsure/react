@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<body>
+    <div id="dv"></div>
+</body>
+<script type="text/babel">
+  class Children extends React.Component{
+      constructor(props){
+          super(props)
+         
+      } 
+      handelClick(){ this.props.childData(5000)  }
+      render(){
+          return(
+              <div>
+                <div>数据：{this.props.data}</div>
+            <button onClick={
+                    function(e){
+                    this.handelClick(e)}.bind(this)
+                            }>点击改变数据</ button>   {/*注意点击函数里面需要使用bind(this)改变this指向，否则报错*/}
+               </div>
+          )
+      }
+  }
+  class Parent extends React.Component{
+      constructor(props){
+       super(props)
+         this.state={
+             data:100
+         }
+      }
+      changeData(newData){
+         this.setState({
+              data:newData
+         })
+         
+      }
+      render(){
+          return(
+         <div>
+<Children  data={this.state.data} childData={
+                                            function(newData){
+                                            this.changeData(newData)}.bind(this)
+                                         } />
+            {/*这里childData的名字和子组件中的事件函数中使用this.props.childData是同一个名字*/}
+            </div>
+          )
+      }
+  }
+      ReactDOM.render(
+        <Parent />,
+        document.getElementById('dv')
+    );
+    </script>
+   <!-- 子组件给父组件传值步骤如下：
+      例如通过点击子组件传值父组件：
+         1、在子组件中定义一个按钮（用于触发事件）
+         2、这个事件函数使用onClick触发，注意：在执行事件函数的时候需要使用bind(this)制定this指向
+         3、在父组件中定义一个方法，方法设置一个形参A，函数里面用于更新state数据，执行的是setState()方法，将需要更新的数据的新的值设置为形参A：
+         4、在父组件中使用子组件的时候，在子组件的标签中定义一个属性，属性中执行一个方法，方法的参数就是第3步定义的方法的形参，在这个方法中调用第三部定义的方法，
+         5、在子组件中定义的事件函数中，使用this.props.方法名() 这里的方法名就是上一步调用子组件时候定义的属性相同的名字，方法内就是传递的参数
+         6、注意在第四步设置属性调用方法的时候，需要使用bind(this)设置this指向，否则报错 -->
+
+        
+</html>

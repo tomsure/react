@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 // 设置根路由
-const Abs = () => (
+const Link = () => (
   // 根路由标签
   <Router>
     <div>

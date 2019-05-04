@@ -1,6 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 // 设置根路由
+
+// 设置Home组件
+const Home = () => (
+  <div>
+    <h2>Home</h2>
+  </div>
+);
+// 设置 Topics组件
+const Topics = ({ match }) => (
+  <div>
+    <h2>Topics</h2>
+   
+    
+  </div>
+);
 const Abs = () => (
   // 根路由标签
   <Router>
@@ -17,25 +32,7 @@ const Abs = () => (
     </div>
   </Router>
 );
-// 设置Home组件
-const Home = () => (
-  <div>
-    <h2>Home</h2>
-  </div>
-);
-// 设置 Topics组件
-const Topics = ({ match }) => (
-  <div>
-    <h2>Topics</h2>
-   
-    
-  </div>
-);
-// 设置二级组件
-const Topic = ({ match }) => {
-  console.log(match);
-  return (
-    <h3>{match.url}</h3>
-  )
-};
+
+
 export default Abs;
+

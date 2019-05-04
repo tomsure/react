@@ -25,5 +25,12 @@ export default(state=deafultState,action)=>{ //函数传递两个参数：state�
         newState.List.splice(action.index,1)
       return newState  
      }
+     if(action.type==='init_list_action'){ //useAxios
+       alert('useAxios')
+     }
+     if(action.type==='put_action'){
+      alert('put_action')
+     }
+
  return state //store所有信息
 }

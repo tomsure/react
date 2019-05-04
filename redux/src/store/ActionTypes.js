@@ -1,0 +1,1 @@
+export const GET_INIT_LIST='get_init_list'

@@ -8,9 +8,7 @@ class UseAxios extends React.Component{
      constructor(props){
          super(props)
          this.state={
-            list:[
-               
-            ]
+            list:[]
          }
      }
      componentDidMount(){  //在生命周期函数中执行
@@ -19,12 +17,8 @@ class UseAxios extends React.Component{
      }
    render(){
        return(
-           
         <div style={{marginTop:'10px',marginLeft:'30px'}}>
-         
-       
-        
-        <List
+       <List
         style={{marginLeft:'10px',width:'300px'}}
     header={<div>Header</div>}
     footer={<div>Footer</div>}

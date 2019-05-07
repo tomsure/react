@@ -21,7 +21,7 @@ function * getList(){  //提前定义好
 }
  
 function * mySaga(){
-   yield takeEvery(GET_INIT_LIST,getList)  //在这里调用， 
+   yield takeEvery(GET_INIT_LIST,getList)  //在这里调用，这一句相当于监听 
    //当takeEvery(方法)第一个参数的值与组件中定义的componentDidMount中的getInitList()方法中的type相同的时候，就会调用第二个参数，这里也就会调用这里的getList（）方法
    //
 }

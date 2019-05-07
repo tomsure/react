@@ -2,8 +2,8 @@ import React from 'react';
 import 'antd/dist/antd.css'
 import {Input,Button,List}  from 'antd'
 import axios from 'axios';
-import store from '../store/index'
 import {initListAction} from '../store/ActionCreator'
+import store from '../store';
 class UseAxios extends React.Component{
      constructor(props){
          super(props)
@@ -15,9 +15,9 @@ class UseAxios extends React.Component{
      }
      componentDidMount(){  //在生命周期函数中执行
          axios.get('http://rap2api.taobao.org/app/mock/162369/example/1552708185734').then(res=>{
+        //    console.log(res)
             const data=res.data
             const action=initListAction(data)
-            store.dispatch(action)
          })
         
      }

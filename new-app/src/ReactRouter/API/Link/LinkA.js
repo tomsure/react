@@ -1,5 +1,5 @@
 import React  from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, hashHistory, Route, Link } from "react-router-dom";
 // 设置根路由
 
       class Box1 extends React.Component{
@@ -26,7 +26,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
              <div>
                  Link标签
                 
-                 <Router>
+                 <Router history={hashHistory}>
                  <li><Link to='/box1'>box1</Link></li>
                  <li><Link to='/box2'>box2</Link></li>
                  <Route path='/box1' component={Box1}></Route>

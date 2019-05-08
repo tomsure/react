@@ -1,24 +1,22 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import LinkA from './API/Link/LinkA.js'
 
-class ReactRouter extends React.Component{
-     
-    render(){
-        return(
+import RouterApi from './API/index'
+class ReactRouter extends React.Component {
+    render() {
+        return (
             <div>
-                
-                <Router> 
-                  <li><Link to='/link'>Link</Link></li>
+                <Router >
                     <div>
-                    <Route path="/link" component={LinkA} />
-                        </div>    
-                    </Router>
-                 
+                        <li> <Link to='/ReactRouter/api'>路由API</Link></li>
+                       <Route path='/ReactRouter/api' component={RouterApi}></Route>
+                    </div>
+                </Router>
+
             </div>
         )
     }
 }
 
-    
+
 export default ReactRouter

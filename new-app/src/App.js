@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import ReactRouter from './ReactRouter/index'
-
+import './css/style.css'
 import ReactApi from './ReactApi'
 class App extends Component {
   render() {
@@ -10,12 +10,12 @@ class App extends Component {
         <Router>
           <div>
             <ul>
-              <li>
+              <span  className='navlist'>
                 <Link to='/ReactRouter'>react-路由</Link>
-              </li>
-              <li>
+              </span>
+              <span className='navlist'>
                 <Link to='/reactapi'>react-API</Link>
-              </li>
+              </span>
             </ul>
               <div>
               <Route path='/ReactRouter' component={ReactRouter}></Route>

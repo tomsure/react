@@ -1,39 +1,38 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
+// import Link1 from './Link/Link1'
+import InnerRefFunction from '../API/Link/innerRef-function'
+ const Link1=function(){
+    
+       return(
+           <div>
+               
+              <Link to="/ReactRouter/api/link/innerRefFunction">InnerRef：值为函数</Link>
+            <Router> 
+                <div> 
+                 <Route path='/ReactRouter/api/link/innerRefFunction' component={InnerRefFunction}></Route>  
+               
+                 </div>
+            </Router> 
+           </div>
+       )
+    
+   
+}
 
 class RouterApi extends React.Component {
     render() {
+          console.log(Link1)
         return (
             <div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>视频</th>
-                            <th>网页</th>
-                            <th>教程</th>
-                        </tr>
-
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1.1</td>
-                            <td>1.2</td>
-                            <td>1.3</td>
-                        </tr>
-                        <tr>
-                            <td>2.1</td>
-                            <td>2.2</td>
-                            <td>2.3</td>
-                        </tr>
-                        <tr>
-                            <td>3.1</td>
-                            <td>3.2</td>
-                            <td>3.3</td>
-                        </tr>
-                    </tbody>
-                </table>
-
+              <span className="item">
+                      <Link to='/ReactRouter/api/link'>Link</Link>
+                    </span>
+            <Router>
+               <div>
+              <Route path="/ReactRouter/api/link" component={Link1}></Route>
+               </div>
+            </Router>
             </div >
         )
     }

@@ -1,0 +1,14 @@
+.navlist{
+      display: inline-block;
+      padding:2px 5px;
+      border: 1px solid lightseagreen;
+      margin:10px;
+       }
+
+
+ .item{
+      display: inline-block;
+      padding:2px 5px;
+      border: 1px solid red;
+      margin:10px;
+ }

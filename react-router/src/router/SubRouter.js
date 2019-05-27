@@ -18,7 +18,7 @@ class AppRouter extends React.Component{
            </City>
           <Route exact  path='/detail' component={Detail}></Route>  
             <Api >
-            <Route exact  path='/api' component={Detail}></Route>  
+            <Route exact  path='/api' component={Api}></Route>  
             </Api>
          
         </Switch>

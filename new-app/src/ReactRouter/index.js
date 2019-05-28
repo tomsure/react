@@ -9,7 +9,7 @@ class ReactRouter extends React.Component {
                 <Router >
                     <div>
                         <li> 
-                            <Link to='/ReactRouter/api'>路由API</Link></li>
+                            <Link to='/ReactRouter/api'>Router-API</Link></li>
                        <Route path='/ReactRouter/api' component={RouterApi}></Route>
                     </div>
                 </Router>

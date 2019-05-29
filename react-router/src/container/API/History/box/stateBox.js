@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 // 设置根路由
- class ParamsBox extends React.Component{
+ class StateBox extends React.Component{
      
      render(){
-         console.log("params",this.props.location.params)  //刷新会丢失
+         console.log("state",this.props.location.state)  //刷新会丢失
          
          return(
              <div>
                   <ul>
                       
-                      <li>params传过来的值,</li>
+                      <li>state传过来的值,刷新不会丢失</li>
                       <li></li>
                   </ul>
              </div>
@@ -20,4 +20,4 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
  
-export default ParamsBox
+export default StateBox

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 // 设置根路由
- class Route extends React.Component{
+ class RouteBox extends React.Component{
      constructor(props){
        super(props)
      }
@@ -14,4 +14,4 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
  
-export default Route;
+export default RouteBox;

@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 // 设置根路由
- class WithRouter extends React.Component{
+ class WithRouterBox extends React.Component{
      constructor(props){
        super(props)
      }
      render(){
          return(
-             <div></div>
+             <div>WithRouterBox</div>
          )
      }
  }
 
 
  
-export default WithRouter;
+export default WithRouterBox;

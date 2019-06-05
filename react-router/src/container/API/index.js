@@ -13,16 +13,15 @@ import NavLink from './NavLink/NavLink'
 import Prompt from './Prompt/Prompt'
 import Redirect from './Redirect/Redirect'
 import RouteBox from './Route/Route'
-import Router from './HashRouter/HashRouter'
+import RouterBox from './Router/RouterBox'
 import StaticRouter from './StaticRouter/StaticRouter'
 import SwitchBox from './Switch/Switch'
-import WithRouter from './withRouter/withRouter'
+import WithRouterBox from './withRouter/WithRouterBox'
 
 class Api extends React.Component{
    render(){
      return(
        <div>
-
            <h3>API</h3>
            <ul>
                <li><Link to='/api/link'>Link标签</Link></li>
@@ -54,13 +53,13 @@ class Api extends React.Component{
                       <Route path='/api/memoryRouter' component={MemoryRouter}></Route>
                       <Route path='/api/redirect' component={Redirect}></Route>
                       <Route path='/api/route' component={RouteBox}></Route>
-                      <Route path='/api/router' component={Router}></Route>
+                      <Route path='/api/router' component={RouterBox}></Route>
                       <Route path='/api/staticRouter' component={StaticRouter}></Route> 
                       <Route path='/api/nativeRouter' component={NativeRouter}></Route>
                       <Route path='/api/switch' component={SwitchBox}></Route>
                       <Route path='/api/match' component={Match}></Route>
                       <Route path='/api/matchPath' component={MatchPath}></Route>
-                      <Route path='/api/withRouter' component={WithRouter}></Route>
+                      <Route path='/api/withRouter' component={WithRouterBox}></Route>
                       
                </Switch>
        </div>

@@ -7,11 +7,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
      }
      render(){
          return(
-             <div></div>
+             <div>LocationBox</div>
          )
      }
  }
-
-
- 
 export default LocationBox;

@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 // 设置根路由
- class History extends React.Component{
+ class UrlBox extends React.Component{
      constructor(props){
        super(props)
      }
      render(){
          return(
-             <div>history</div>
+             <div>UrlBox</div>
          )
      }
  }
 
 
  
-export default History;
+export default UrlBox;

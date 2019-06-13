@@ -4,7 +4,7 @@ import LinkBox from '../API/Link'
 import HistoryBox from '../API/History'
 import BrowserRouter from './BrowserRouter/BrowserRouter'
 import HashRouter from './HashRouter/HashRouter'
-import LocationBox from './location'
+import LocationBox from './LocationBox'
 import Match from './match/Match'
 import MatchPath from './matchPath/PatchPath'
 import MemoryRouter from './MemoryRouter/MemoryRouter'
@@ -28,7 +28,7 @@ class Api extends React.Component{
                <li><Link to='/api/history'>history对象</Link></li>
                <li><Link to='/api/browserRouter'> BrowserRouter</Link></li>
                <li><Link to='/api/hashRouter'>HashRouter</Link></li>
-               <li><Link to='/api/Location'>Location</Link></li>
+               <li><Link to='/api/location'>Location</Link></li>
                 <li><Link to='/api/navLink'>NavLink</Link></li>
                <li><Link to='/api/memoryRouter'>MemoryRouter</Link></li> 
                <li><Link to='/api/redirect'>Redirect</Link></li>
@@ -42,7 +42,6 @@ class Api extends React.Component{
                <li><Link to='/api/withRouter'>withRouter</Link></li>
            </ul>
               <Switch>
-                     
                       <Route path='/api/link' component={LinkBox}></Route>
                       <Route path='/api/history' component={HistoryBox}></Route>
                       <Route path='/api/browserRouter' component={BrowserRouter}></Route>

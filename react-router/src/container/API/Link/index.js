@@ -10,7 +10,7 @@ import ToString from './to-string'
         return(
             <div> 
                    <ul>
-                   <li><Link to='/api/link/toString'>to 值为函数</Link></li>
+                   <li><Link to='/api/link/toString'>to 值为字符串</Link></li>
                    <li><Link to='/api/link/toObject'>to 值为对象</Link></li>
                    <li><Link to='/api/link/InnerRefFunction'>innerRef 值为函数</Link></li>
                    <li><Link to='/api/link/InnerRefObject'>innerRef 值为对象</Link></li>

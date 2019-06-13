@@ -20,7 +20,7 @@ class App extends Component {
                 <Link to='/detail'>详情</Link>
               </li>
               <li className='navlist'>
-                <Link to='/api'>react-API</Link>
+                <Link to='/api'>reactRouter-API</Link>
               </li>
             </ul>
               <div>

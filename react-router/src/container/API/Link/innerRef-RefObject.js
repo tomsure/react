@@ -8,7 +8,10 @@ class InnerRefObj extends React.Component{
 
           InnerRefObj
           
-             
+             {/* <Link innerRef>innerHref值为对象</Link> */}
+             <Switch>
+               {/* <Route ></Route> */}
+             </Switch>
        </div>
      )
    }

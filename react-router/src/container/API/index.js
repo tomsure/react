@@ -11,7 +11,7 @@ import MemoryRouter from './MemoryRouter/MemoryRouter'
 import NativeRouter from './NativeRouter/NativeRouter'
 import NavLink from './NavLink/NavLink'
 import Prompt from './Prompt/Prompt'
-import Redirect from './Redirect/Redirect'
+import RedirectBox from './RedirectBox'
 import RouteBox from './Route/Route'
 import RouterBox from './Router/RouterBox'
 import StaticRouter from './StaticRouter/StaticRouter'
@@ -50,7 +50,7 @@ class Api extends React.Component{
                       <Route path='/api/navLink' component={NavLink}></Route>
                       <Route path='/api/prompt' component={Prompt}></Route>
                       <Route path='/api/memoryRouter' component={MemoryRouter}></Route>
-                      <Route path='/api/redirect' component={Redirect}></Route>
+                      <Route path='/api/redirect' component={RedirectBox}></Route>
                       <Route path='/api/route' component={RouteBox}></Route>
                       <Route path='/api/router' component={RouterBox}></Route>
                       <Route path='/api/staticRouter' component={StaticRouter}></Route> 

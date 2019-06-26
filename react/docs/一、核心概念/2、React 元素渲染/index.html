@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+<script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+<script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<style>
+  .box{
+      width: 100%;
+      height:100px;
+      background: red;
+  }
+
+</style>
+<body>
+    <div id="dv"></div>
+    
+</body>
+<script type="text/babel">
+ const ele=<div className="box"></div>
+    ReactDOM.render(
+        // <h1>Hello, world!</h1>,
+        ele,
+        document.getElementById('dv')
+    );
+    </script>
+    React 元素的渲染主要由一下步骤实现：
+      1、根元素：定义html页面，并编写一个div作为根组件，例如上面的id为dv的div
+      2,ReactDOM.render()方法:
+          这个方法用于初始化react根组件
+      3、react 组件：可以使用变量定义html元素，然后中作为选项放到ReactDOM.render()方法中
+      4、挂载根组件到ReactDOM中，也就是放在ReactDOM.render()方法中
+</html>

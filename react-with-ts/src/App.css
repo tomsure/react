@@ -1,0 +1,11 @@
+.app{
+  padding:10px;
+  margin:10px;
+  border:1px solid red;
+  text-align: center;
+}
+.box{
+  padding:10px;
+  margin:10px;
+  border:1px solid blue;
+}

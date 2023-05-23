@@ -34,13 +34,15 @@ const mapStateToProps = (state) => { //参数state
 const mapDispatchToProps = (dispatch) => {
   return {
     handelInputChange(e) {
-     
-      const action = {type: "change_input",value: e.target.value   //将输入的数据传到store
+
+      const action = {
+        type: "change_input", value: e.target.value   //将输入的数据传到store
       }
-     dispatch(action)
+      dispatch(action)
     },
     handelClick() {
-      const action = {type: 'add_item'
+      const action = {
+        type: 'add_item'
       }
       dispatch(action)
     }
@@ -48,7 +50,7 @@ const mapDispatchToProps = (dispatch) => {
 }
 export default connect(mapStateToProps, mapDispatchToProps)(TodoList)
 
-        
+
 
 
 

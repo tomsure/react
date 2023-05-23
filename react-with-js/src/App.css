@@ -1,0 +1,27 @@
+.app{
+  padding:10px;
+  margin:10px;
+  border:1px solid red;
+  text-align: center;
+}
+.box{
+  padding:10px;
+  margin:10px;
+  border:1px solid blue;
+  /* display: flex; */
+}
+.root-box{
+  padding:10px;
+  margin: 0 auto;
+}
+.link-box{
+  margin:0 10px;
+}
+button{
+  margin:10px;
+}
+.block{
+  padding:20px;
+  margin:10px;
+  display: block;
+}
